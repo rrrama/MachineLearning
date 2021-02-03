@@ -48,7 +48,7 @@ class CartPoleAgent:
             else:
                 update = reward + self.gamma*np.amax(self.model.predict(next_state)[0])
 
-            #print("dicks "+str(state.shape))
+            #print("test "+str(state.shape))
             values = self.model.predict(state)
             #print(values)
             #print(values.shape)
